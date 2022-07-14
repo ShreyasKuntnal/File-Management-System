@@ -1,5 +1,6 @@
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
+const resetPasswordButton = document.getElementById('resetPassword');
 const container = document.getElementById('container');
 
 signUpButton.addEventListener('click', () => {
@@ -8,4 +9,8 @@ signUpButton.addEventListener('click', () => {
 
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
+});
+
+resetPasswordButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
 });
